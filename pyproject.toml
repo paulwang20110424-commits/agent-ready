@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-ready"
+version = "1.0.0"
+description = "Score how ready a codebase is for AI coding agents: 16 checks, one command, a badge."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "paulwang20110424-commits" }]
+dependencies = []
+keywords = [
+  "agents",
+  "ai-agents",
+  "codebase-audit",
+  "developer-experience",
+  "onboarding",
+  "agencmd",
+  "agents-md",
+  "lighthouse",
+  "cli",
+  "zero-dependencies",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/paulwang20110424-commits/agent-ready"
+Issues = "https://github.com/paulwang20110424-commits/agent-ready/issues"
+Changelog = "https://github.com/paulwang20110424-commits/agent-ready/releases"
+
+[project.scripts]
+agent-ready = "agent_ready:main"
+
+[tool.setuptools]
+py-modules = ["agent_ready"]

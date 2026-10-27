@@ -1,0 +1,19 @@
+# agent-ready
+
+> Score how ready a codebase is for AI coding agents: 16 deterministic checks, one command,
+> a letter grade, and a badge you can commit. Zero dependencies, no network, no LLM.
+
+## Docs
+- [README](./README.md): what it measures, the full rubric, and usage
+- [Chinese README](./README.zh-CN.md): 中文说明
+- [AGENTS.md](./AGENTS.md): instructions for AI agents working on this repository
+- [Rubric](#): run `agent-ready --rules` for the authoritative scoring table
+
+## Source
+- [agent_ready.py](./agent_ready.py): the entire tool (single file, standard library only)
+- [tests/test_agent_ready.py](./tests/test_agent_ready.py): the test suite
+
+## Usage in one line
+```bash
+python3 agent_ready.py . && python3 agent_ready.py . --init
+```
